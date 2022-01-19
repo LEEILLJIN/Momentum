@@ -1,0 +1,86 @@
+body{
+    color:white;    
+    background-color:slategray;
+}
+h1{
+    font-size: 100px;
+    font-family: cursive;
+    text-align: center;
+    color :white;
+    transition: color .5s ease-in-out;
+    margin-top: 0px;
+    padding-top: 40px;
+}
+.btn{
+    cursor: pointer;
+}
+.clicked{
+    color : #7f8c8d;
+}
+.js-form,
+.js-greetings,
+.js-toDoForm{
+    text-align: center;
+    color : white;
+}
+.js-toDoList{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color : white;
+    list-style: none;
+}
+.js-weather{
+    margin-top: 1px;
+    float: right;
+
+}
+.toDoinput,
+.nameinput{
+    width:300px;
+    height:50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    border-color: white;
+    
+}
+.delbtn{
+    color : white;
+}
+.delbtn:hover{
+    font-size : 20px;
+    cursor: pointer;
+}
+::placeholder{
+    color : white
+}
+.form,
+.greetings{
+    display : none;
+}
+.greetings:hover{
+    cursor: pointer;
+}
+
+.showing{
+    display: block;
+}
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
