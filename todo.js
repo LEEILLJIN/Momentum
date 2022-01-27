@@ -25,7 +25,7 @@ function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("span");
     const span = document.createElement("span");
-    const newId = toDos.length+1;
+    const newId = toDos.length;
     delBtn.innerText = " x";
     delBtn.classList.add("delbtn");
     delBtn.addEventListener("click",deleteToDo);
@@ -43,7 +43,7 @@ function paintToDo(text){
     saveToDos();
 }
 
-function handleSubmit(event){
+function todohandleSubmit(event){
     event.preventDefault();
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
@@ -61,7 +61,7 @@ function loadToDos(){
 }
 function init(){
     loadToDos();
-    toDoForm.addEventListener("submit", handleSubmit);
+    toDoForm.addEventListener("submit", todohandleSubmit);
 }
 
 init();
